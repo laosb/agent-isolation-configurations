@@ -2,6 +2,10 @@
   "v": 0,
   "dependsOn": [],
   "additionalMounts": [],
-  "additionalBinPaths": ["$HOME/.claude/bin", "$HOME/.bun/bin"],
+  "additionalBinPaths": [
+    "$HOME/.claude/bin",
+    "$HOME/.bun/bin",
+    "$HOME/.local/bin"
+  ],
   "entrypoint": ["claude"]
 }
