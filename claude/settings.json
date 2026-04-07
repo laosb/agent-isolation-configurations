@@ -1,0 +1,7 @@
+{
+  "v": 0,
+  "dependsOn": [],
+  "additionalMounts": [],
+  "additionalBinPaths": ["$HOME/.claude/bin", "$HOME/.bun/bin"],
+  "entrypoint": ["claude"]
+}
