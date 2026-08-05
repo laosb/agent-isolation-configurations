@@ -1,4 +1,5 @@
 {
   "v": 0,
+  "dependsOn": ["curl"],
   "entrypoint": ["copilot"]
 }

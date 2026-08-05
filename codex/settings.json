@@ -1,0 +1,7 @@
+{
+  "v": 0,
+  "dependsOn": ["curl"],
+  "additionalMounts": [],
+  "additionalBinPaths": ["$HOME/.local/bin"],
+  "entrypoint": ["codex"]
+}

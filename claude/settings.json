@@ -1,6 +1,6 @@
 {
   "v": 0,
-  "dependsOn": [],
+  "dependsOn": ["curl"],
   "additionalMounts": [],
   "additionalBinPaths": [
     "$HOME/.claude/bin",
