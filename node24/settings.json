@@ -1,0 +1,6 @@
+{
+  "v": 0,
+  "dependsOn": ["curl"],
+  "additionalMounts": [],
+  "additionalBinPaths": ["$HOME/.local/node24/bin", "$HOME/.local/bin"]
+}

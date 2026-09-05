@@ -6,6 +6,23 @@ Common agent configuration for AgentIsolation.
 `/agent-isolation/agents` inside the container. Configurations are selected with
 `agentc -c <name>[,<name>...]` (default: `claude`).
 
+## Configurations
+
+| Name | Entrypoint | Purpose |
+| --- | --- | --- |
+| `claude` | `claude` | Claude Code, plus the Bun its plugins need. |
+| `claude-acp` | `claude-agent-acp` | [ACP](https://agentclientprotocol.com) adapter for the Claude Agent SDK, for ACP clients like Zed and JetBrains. |
+| `codex` | `codex` | Codex CLI. |
+| `copilot` | `copilot` | GitHub Copilot CLI. |
+| `node` → `node24` | — | Node.js LTS in `$HOME`, for configurations that need a Node runtime. |
+| `curl` | — | Static `curl` for base images that ship without one. |
+
+The last two define no entrypoint: they exist to be depended on. A configuration
+directory may also be a symlink to another — `node` points at `node24` — so a
+dependent picks whether to track LTS (`dependsOn: ["node"]`) or pin the major
+(`dependsOn: ["node24"]`) while sharing one install. When a new LTS lands, add
+the directory and repoint the symlink.
+
 ## Layout
 
 One directory per configuration, named exactly as it is referenced:

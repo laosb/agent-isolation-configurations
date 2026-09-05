@@ -1,0 +1,7 @@
+{
+  "v": 0,
+  "dependsOn": ["node"],
+  "additionalMounts": [],
+  "additionalBinPaths": ["$HOME/.local/bin"],
+  "entrypoint": ["claude-agent-acp"]
+}
