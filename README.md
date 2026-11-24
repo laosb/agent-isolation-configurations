@@ -10,6 +10,7 @@ Common agent configuration for AgentIsolation.
 
 | Name | Entrypoint | Purpose |
 | --- | --- | --- |
+| `agy` | `agy` | Antigravity CLI. |
 | `claude` | `claude` | Claude Code, plus the Bun its plugins need. |
 | `claude-acp` | `claude-agent-acp` | [ACP](https://agentclientprotocol.com) adapter for the Claude Agent SDK, for ACP clients like Zed and JetBrains. |
 | `codex` | `codex` | Codex CLI. |
